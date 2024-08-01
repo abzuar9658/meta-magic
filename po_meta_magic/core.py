@@ -103,7 +103,6 @@ def extract_meta_data(image, bbox, key, optional_key_match, retry=0):
     end_y = bbox[3] * img_height
 
     cropped_image = image.crop((start_x, start_y, end_x, end_y))
-    cropped_image.save(f'output_images/file{datetime.now()}.jpg')
     text = pytesseract.image_to_string(cropped_image)
     text = text.strip()
 

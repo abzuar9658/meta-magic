@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="po_meta_magic",
-    version="0.1.5",
+    version="0.1.6",
     packages=find_packages(),
     install_requires=[
         'pillow',
